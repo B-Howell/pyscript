@@ -1,0 +1,2 @@
+# Example if you want to pin a specific version of Pyodide
+interpreter = "0.23.4"
