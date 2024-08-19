@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.4.1/core.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://pyscript.net/releases/2024.4.1/core.js"></script>
+    <script src="script.js" defer></script>
+    <py-config>
+        {
+            "files": {
+                "./python-scripts/day7/hangman_words.py": "",
+                "./python-scripts/day7/hangman_art.py": "",
+                "./python-scripts/day8/cipher-art.py": "",
+                "./python-scripts/day9/auction-art.py": ""
+            }
+        }
+    </py-config>     
+    <title>100 Days of Python Showcase</title>      
+</head>
+<body>
+    <section id="header">
+        <h1>100 Days of Python Showcase</h1>
+        <p>I created this webpage as a place to showcase my progress in Angela Yu's course '100 Days of Python'. At the end of each day you create a new project in order to showcase new skills and the concepts that were learned.</p>
+        <p>If you would like to see a project run then simply click on the corresponding project card and a ternminal will popup.</p>
+    </section>
+    <section id="script-menu" class="articles">
+        <article onclick="openModal('python-scripts/day1/main.py', 'Day 1: Band Name Generator')">
+            <div class="article-wrapper">
+                <figure>
+                    <img src="images/band-name-generator.png" alt="Day 1: Band Name Generator" />
+                </figure>
+                <div class="article-body">
+                    <h1>Day 1</h1>
+                    <h2>Band Name Generator</h2>
+                    <h3>Working with Variables in Python to Manage Data</h3>
+                </div>
+            </div>
+        </article>
+        <article onclick="openModal('python-scripts/day2/main.py', 'Day 2: Tip Calculator')">
+            <div class="article-wrapper">
+                <figure>
+                    <img src="images/tip-calculator.png" alt="Day 2: Tip Calculator" />
+                </figure>
+                <div class="article-body">
+                    <h1>Day 2</h1>
+                    <h2>Tip Calculator</h2>
+                    <h3>Understanding Data Types and How to Manipulate Strings</h3>
+                </div>
+            </div>
+        </article>
+        <article onclick="openModal('python-scripts/day3/main.py', 'Day 3: Treasure Island')">
+            <div class="article-wrapper">
+                <figure>
+                    <img src="images/treasure-island.png" alt="Day 3: Treasure Island" />
+                </figure>
+                <div class="article-body">
+                    <h1>Day 3</h1>
+                    <h2>Treasure Island</h2>
+                    <h3>Control Flow and Logical Operators</h3>
+                </div>
+            </div>
+        </article>
+        <article onclick="openModal('python-scripts/day4/main.py', 'Day 4: Rock Paper Scissors')">
+            <div class="article-wrapper">
+                <figure>
+                    <img src="images/rock-paper-scissors.png" alt="Day 4: Rock Paper Scissors" />
+                </figure>
+                <div class="article-body">
+                    <h1>Day 4</h1>
+                    <h2>Rock Paper Scissors</h2>
+                    <h3>Randomization and Python Lists</h3>
+                </div>
+            </div>
+        </article>
+        <article onclick="openModal('python-scripts/day5/main.py', 'Day 5: Password Generator')">
+            <div class="article-wrapper">
+                <figure>
+                    <img src="images/password-generator.png" alt="Day 5: Password Generator" />
+                </figure>
+                <div class="article-body">
+                    <h1>Day 5</h1>
+                    <h2>Password Generator</h2>
+                    <h3>Python Loops</h3>
+                </div>
+            </div>
+        </article>
+        <article onclick="openModal('python-scripts/day7/main.py', 'Day 7: Hangman')">
+            <div class="article-wrapper">
+                <figure>
+                    <img src="images/hangman.png" alt="Day 7: Hangman" />
+                </figure>
+                <div class="article-body">
+                    <h1>Day 7</h1>
+                    <h2>Hangman</h2>
+                    <h3>Combining lessons from Days 1-6</h3>
+                </div>
+            </div>
+        </article>
+        <article onclick="openModal('python-scripts/day8/main.py', 'Day 8: Caesar Cipher')">
+            <div class="article-wrapper">
+                <figure>
+                    <img src="images/caesar-cipher.png" alt="Day 8: Caesar Cipher" />
+                </figure>
+                <div class="article-body">
+                    <h1>Day 8</h1>
+                    <h2>Caesar Cipher</h2>
+                    <h3>Function Parameters</h3>
+                </div>
+            </div>
+        </article>
+        <!--<article onclick="openModal('python-scripts/day9/main.py', 'Day 9: Secret Auction')">
+            <div class="article-wrapper">
+                <figure>
+                    <img src="images/auction.png" alt="Day 9: Secret Auction" />
+                </figure>
+                <div class="article-body">
+                    <h1>Day 9</h1>
+                    <h2>Secret Auction</h2>
+                    <h3>Dictionaries & Nesting</h3>
+                </div>
+            </div>
+        </article> -->
+    </section>
+    
+    <section id="footer">
+        <p>Images created with DALL-E.</p>
+    </section>
+
+    <div id="modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <div id="modal-header">
+                <h2 id="modal-title">Python Terminal</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="terminal">
+                <div id="terminal-container"></div>
+            </div>            
+        </div>        
+    </div>
+</body>
+</html>
