@@ -9,7 +9,7 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
         super().end_headers()
 
 # Set the port
-PORT = 8000
+PORT = 8080
 
 handler_object = MyHttpRequestHandler
 

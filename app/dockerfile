@@ -1,0 +1,14 @@
+# Use a lightweight Python base image
+FROM python:3.9-slim
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the server script and webpage files to the container
+COPY . .
+
+# Expose the new port
+EXPOSE 8080
+
+# Run the server when the container starts
+CMD ["python", "server.py"]
